@@ -1,118 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure proper box model */
+}
 
-*{margin: 0;padding: 0;}
-body{
+body {
     font-family: 'Poppins', sans-serif;
 }
-.back-top{
+
+.py-8 {
+    background-color: rgb(255, 255, 255);
+    height: 70vh;
+}
+
+.img-fluid1 {
+    margin-top: 20px;
+    height: auto;
+    width: 80vh;
+    margin-top: 50px;
+}
+
+.back-top {
     position: fixed;
     bottom: 15px;
     right: 15px;
-    font-size: 25px;width: 40px ;height: 40px;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
     background-color: #333;
     color: #ddd;
-    border-radius: 50%;text-align: center;
+    border-radius: 50%;
+    text-align: center;
 }
-.logo-text{
+
+.logo-text {
     font-size: 40px;
-    font-family: 'Berkshire Swash',cursive;
+    font-family: Verdana;
 }
-.logo-dot{
+
+.logo-dot {
     font-size: 40px;
     margin-left: 3px;
     color: #4eda4e;
 }
-.primary-color{
+
+.primary-color {
     background-color: #333;
 }
-.single-shop{
-    background-color: #555;
+
+img {
+    transition: transform 0.5s ease;
 }
 
-img{
-    transition: .5s;
-}
-img:hover{
+img:hover {
     transform: scale(1.05);
 }
 
-.client-section{
+.client-section {
     background-color: #333;
+    padding: 50px;
 }
-.single-card {
-    background-color: #555;
+.client-section .card-img-top {
+    border-radius: 50%;
+
 }
-#features{
-    background-image: url(images/wallpaperflare.com_wallpaper\ \(1\).jpg);
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center; /* Centers image vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Center text horizontally */
 }
-.slider-img {
-    height: 85vh;
-    background-image: url(images/awesomebike.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
+
+.feature-card .card-body {
+    display: flex;
+    max-height: 200px;
+    flex-direction: column;
+    justify-content: flex-end; /* Align content to the bottom */
+    flex-grow: 1;
 }
-.slide-wrap{
-    width: 60%;;
+
+.feature-card .card-img-top {
+    margin-top:50px ; /* Pushes the image to the top */
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
 }
-.slide-details{
-    color: #ddd
+
+.feature-card .card-title,
+.feature-card .card-text {
+    margin-top: 10px;
 }
-.about-harley-box{
-    background-color: #0D0925;
+
+.feature-card .btn {
+    align-self: center;
+    margin-top: 10px;
+    background-color: #E76F51;
 }
-.frequent-box{
-    background-color: #222;
+#features {
+    background-color: rgb(0, 0, 0);
 }
-/* ---------------- */
-  a {
-      color: #ddd;
-      text-decoration: none;
-      display: block;
-  }
 
-  h1 {
-      color: #ffffff;
-  }
+.slide-wrap {
+    width: 60%;
+}
 
-  p {
-      color: #6C6C6C;
-  }
+.slide-details {
+    color: #ffffff;
+}
 
-  .btn:focus,
-  .form-control:focus {
-      outline: none;
-      box-shadow: none;
-  }
+.about-harley-box {
+    background-color: #ffffff;
+}
 
-  .small-border-p::after,
-  .small-border::after {
-      content: "";
-      background-color: rgba(231, 111, 81, 0.5);
-      width: 100px;
-      height: 2px;
-      position: absolute;
-      top: 110px;
-      left: 0;
-      right: 0;
-      margin: auto;
-  }
+a {
+    color: #ddd;
+    text-decoration: none;
+    display: block;
+}
 
-  .small-border-p::after {
-      top: 30px;
-  }
+h1 {
+    color: #ffffff;
+}
 
-  .text-color {
-      color: #E76F51;
-  }
+p {
+    color: #6C6C6C;
+}
 
-  .text-second {
-      color: #264653;
-  }
+.btn:focus,
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
 
-  .bg-main {
-      background-color: #E76F51;
-  }
+.small-border-p::after,
+.small-border::after {
+    content: "";
+    background-color: rgba(231, 111, 81, 0.5);
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
 
-  .bg-gray {
-      background-color: rgba(128, 128, 128, 0.2);
-  }
+.small-border-p::after {
+    top: 30px;
+}
+
+.text-color {
+    color: #E76F51;
+}
+
+.text-second {
+    color: #264653;
+}
+
+.bg-main {
+    background-color: #E76F51;
+}
+
+.bg-gray {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+
+
+
+/* Floating Window Styles */
+.floating-window {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+    width: 500px;
+}
+
+.floating-content {
+    text-align: center;
+}
+
+.price-details {
+    margin-bottom: 10px;
+}
+
+.price-details div {
+    margin-bottom: 5px;
+}
+
+.btn-primary {
+    background-color: #E76F51;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #D35400;
+    color: #fff;
+}
+
+/* Modal Styles (unchanged from previous example) */
+.modal-content {
+    text-align: center;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.modal-body {
+    font-size: 16px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #888;
+    cursor: pointer;
+
+}
+
+.single-shop {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensures each card takes full height */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.single-shop .card-img-top {
+     
+    flex: 1;
+    object-fit: contain; 
+    border-bottom: 1px solid #ddd;
+}
+
+.single-shop .card-body1 {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.single-shop .card-title {
+    font-size: 20px;
+    
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.single-shop .card-text {
+    color: #666;
+    
+    flex:1;
+    margin-top: 5px;
+    
+}
+
+/* Optional: Adjusting specific styles */
+
+
+.logo-img{
+    height: 30px;
+    width: 50px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}

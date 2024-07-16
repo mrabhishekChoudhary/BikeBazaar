@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to BikeBazaar- Abhishek Kumar</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/hand-drawn-vintage-motorcycle-logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <!-- Google Font Family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@300;400;500;600;700;900&display=swap"
         rel="stylesheet">
     <!-- Font Awesome Icons -->
+     
     <script src="https://kit.fontawesome.com/e768f44d60.js" crossorigin="anonymous"></script>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -28,104 +29,64 @@
 
 <body>
 
-
+<script src="purchase.js"></script>
     <!-- header started
 ------------------------------- -->
-    <header class="text-white" id="header">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-            <div class="container">
-                <a class="navbar-brand" href="#"><span class="logo-text">BikeBazaar<sup
-                            class="logo-dot">.</sup></span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="d-flex me-auto"> </div>
-                    <ul class="navbar-nav mb-2 mb-lg-0 text-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#features">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
-                        </li>
+<header class="text-white" id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="" class="logo-img">
+                <span class="logo-text">BikeBazaar<sup class="logo-dot">.</sup></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Shopping">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contactUsLink" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-                    </ul>
+    <div class="py-8">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="slide-wrap">
+                        <p>Made Like a Gun, Goes Like a Bullet</p>
+                        <h1 class="fw-bold slide-title" style="color: black;">Royal Enfield Classic 350</h1>
+                        <p class="slide-details" style="color: grey;">Royal Enfield Classic 350 epitomizes vintage charm with modern reliability. Its iconic design and robust performance offer a blend of comfort and charisma on every ride. Whether on city streets or open highways, the Classic 350 promises a nostalgic yet adventurous experience</p>
 
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary buy-now-btn px-4 py-2" style="background-color: #E76F51;"
+                            data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                            Purchase <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
                 </div>
-            </div>
-            </div>
-        </nav>
-        <div class="py-lg-3 d-lg-flex .d-md-block slider-img">
-            <div class="container d-lg-flex align-items-center .d-md-block">
-                <div class="slide-wrap">
-                    <p style="color: #E0E0E0;">Computer-controlled digital transistorized with electronic advance</p>
-                    <h1 class="fw-bold text-white slide-title">Honda CBR 300R</h1>
-                    <p class="slide-details">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                        Velit officia consequat
-                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
-                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body text-second">
-                                    <h1 class="fs-2">Are you sure want to By Harely Davidson??</h1>
-                                    <span class="fs-4">Its $23,000 </span>
-                                </div>
-                                <div class="modal-footer text-second">
-                                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
-                                        data-bs-toggle="modal" data-bs-dismiss="modal">Buy Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
-                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body text-second">
-                                    <h1 class="fs-3">Its Processing</h1>
-                                </div>
-                                <div class="modal-footer text-second">
-                                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle"
-                                        data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary px-4 py-2 border-0" style="background-color: #E76F51;"
-                        data-bs-toggle="modal" href="#exampleModalToggle" role="button"> Purchase <i
-                            class="fas fa-shopping-cart"></i>
-                    </button>
-
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <img src="images/PngItem_1516220.png" alt="Image Description" class="img-fluid1">
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
     <!-- Featured Bike -->
     <section id="features" class="py-5">
@@ -136,16 +97,38 @@
                 </p>
             </div>
             <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-4 g-5">
-                    <img src="images/pngwing.com (1).png" alt="" class="img-fluid">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card feature-card">
+                        <img src="images/pngwing.com (1).png" alt="Royal Enfield Classic 350" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Royal Enfield Classic 350</h5>
+                            <p class="card-text">Timeless design meets enduring performance. Perfect for city streets and open highways.</p>
+                            <a href="https://www.royalenfield.com/in/en/motorcycles/classic-350/" target ="_blank" class ="btn">Learn More</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 g-5">
-                    <img src="images/pngwing.com.png" alt="" class="img-fluid">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card feature-card">
+                        <img src="images/pngwing.com.png" alt="Royal Enfield Himalayan" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Royal Enfield Himalayan</h5>
+                            <p class="card-text">Adventure-ready with rugged durability. Ideal for off-road explorations and urban adventures.</p>
+                            <a href="https://www.royalenfield.com/in/en/motorcycles/himalayan/" target="_blank" class="btn">Learn More</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 g-5">
-                    <img src="images/pngwing.com (2).png" alt="" class="img-fluid">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card feature-card">
+                        <img src="images/pngwing.com (2).png" alt="Royal Enfield GT 650" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Royal Enfield GT 650</h5>
+                            <p class="card-text">Classic cafe racer style with modern engineering. Unmatched performance on the road.</p>
+                            <a href="https://www.royalenfield.com/in/en/motorcycles/continental-gt/" target="_blank" class="btn">Learn More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
         </div>
     </section>
 
@@ -153,37 +136,29 @@
     <section class="about-harley-box py-3">
         <div class="container">
             <div class="text-center">
-                <h1 class="text-center fw-bold py-5 position-relative small-border">BIKE<span
+                <h1 class="text-center fw-bold py-5 position-relative small-border" style="color: black;">BIKE<span
                         style="color: #E76F51;"> EVER</span>
             </div>
             <div class="row my-3">
                 <div class="col-sm-12 col-md-12 col-lg-6">
-                    <img src="images/harley-main.jpg" class="img-fluid">
+                    <img src="images/PngItem_1516191.png" class="img-fluid">
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6">
-                    <h1 class="fs-1 text-color fw-bold">Harley-Davidson Motor Company. </h1>
+                    <h1 class="fs-1 text-color fw-bold">Royal Enfield Motor Company. </h1>
                     <span class="my-3 d-block">ABOUT US</span>
-                    <p>Harley-Davidson® dealership for the
-                        Niagara Frontier and all of Western New York, including Niagara Falls, Tonawanda, Lockport,
-                        Kenmore, Williamsville, Buffalo, Lackawanna, Hamburg, East Aurora and Depew.</p>
-                    <p>We provide a full-line of Harley-Davidson® motorcycles, parts, accessories and apparel. Whether
-                        you are just starting to develop an interest in the popular Harley-Davidson® craze or you are a
-                        seasoned riding veteran, we have everything you need to "Live to Ride".</p>
+                    <p>Welcome to your premier Royal Enfield dealership for the Niagara Frontier and all of Western New York, including Niagara Falls, Tonawanda, Lockport, Kenmore, Williamsville, Buffalo, Lackawanna, Hamburg, East Aurora, and Depew.</p>
+<p>We offer a comprehensive range of Royal Enfield motorcycles, parts, accessories, and apparel. Whether you are new to the world of Royal Enfield or a seasoned rider, we have everything you need to embrace the spirit of adventure and classic motorcycling. Visit us and discover how we can help you "Ride Pure."</p>
                 </div>
             </div>
             <div class="row my-3">
                 <div class="col-sm-12 col-md-12 col-lg-6">
-                    <h1 class="fs-1 text-color fw-bold">WELCOME TO AMERICAN HARLEY-DAVIDSON®</h1>
+                    <h1 class="fs-1 text-color fw-bold">WELCOME TO Royal Enfield®</h1>
                     <span class="my-3">ABOUT US</span>
-                    <p>American Harley-Davidson® North Tonawanda, NY is the premier Harley-Davidson® dealership for the
-                        Niagara Frontier and all of Western New York, including Niagara Falls, Tonawanda, Lockport,
-                        Kenmore, Williamsville, Buffalo, Lackawanna, Hamburg, East Aurora and Depew.</p>
-                    <p>Harley-Davidson® motorcycles, parts, accessories and apparel. Whether
-                        you are just starting to develop an interest in the popular Harley-Davidson® craze or you are a
-                        seasoned riding veteran, we have everything you need to "Live to Ride".</p>
+                    <p>Royal Enfield of Niagara is the premier Royal Enfield dealership for the Niagara Frontier and all of Western New York, including Niagara Falls, Tonawanda, Lockport, Kenmore, Williamsville, Buffalo, Lackawanna, Hamburg, East Aurora, and Depew.</p>
+                    <p>We offer a full range of Royal Enfield motorcycles, parts, accessories, and apparel. Whether you're just starting to explore the classic allure of Royal Enfield or you're a seasoned riding enthusiast, we have everything you need to "Ride Pure."</p>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6">
-                    <video src="video/harley.mp4" style="width: 100%;" controls poster="images/harley-1.jpg"></video>
+                    <img src="images/PngItem_1516497.png" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -192,7 +167,7 @@
 
     <!-- Shoping Section Started
     -------------------------------- -->
-    <section class="primary-color py-3" >
+    <section class="primary-color py-3" id="Shopping" >
         <div class="container">
             <div class="text-center">
                 <h1 class="text-center fw-bold py-5 position-relative small-border">Lets Make Some<span
@@ -200,544 +175,138 @@
             </div>
             <div class="row g-4">
 
-                <!-- Single Shop BOx -->
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card p-3  border-0 shadow-lg single-shop">
-                        <img src="images/bike-1.png" class="card-img-top mx-auto mt-3" style="width: 90%;" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-color">Harley Davidson</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between">
-                                <a href="#" class="text-success fw-bold fs-3">$23,000</a>
-                                <button class="btn bg-main text-white" type="button" data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                                    Buy Now <i class="fas fa-shopping-cart"></i>
-                                </button>
 
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
-                                    aria-labelledby="offcanvasExampleLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title fw-bold text-color text-uppercase"
-                                            id="offcanvasExampleLabel">Buying Immidietly</h5>
-                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        <div class="my-1">
-                                            Some text as placeholder. In real life you can have the elements you have
-                                            chosen. Like, text, images, lists, etc.
-                                        </div>
-                                        <div>
-                                            <img src="images/bike-1.png" class="img-fluid">
-                                        </div>
-                                        <div class="d-flex flex-wrap p-1 my-3">
-                                            <input type="text" placeholder="Enter Coupon" style="width: 60%;"
-                                                class="form-control">
-                                            <button class="btn btn-warning text-white " style="width: 40%;">Apply
-                                                Coupon</button>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">Price </span>
-                                            <span>$23,000</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">Taxes </span>
-                                            <span>$2,000</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">SubTotal </span>
-                                            <span>$25,000</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">Total </span>
-                                            <span>$25,000</span>
-                                        </div>
-                                        <div>
-                                            <div class="btn bg-main text-black mx-auto" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal"><span class="fw-bold text-white">Order
-                                                    Now</span>
 
-                                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h5 class="modal-title text-start"
-                                                                    id="exampleModalLabel">Buying Procced
-                                                                    title</h5>
-                                                                <button type="button" class="btn-close"
-                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
-                                                            </div>
-                                                            <div class="modal-body text-start fw-bold text-second">
-                                                                Successfully Order Placed. Your will deliver by
-                                                                Multimission Maritime Helicopter
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Shop BOx -->
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card p-3  border-0 shadow-lg single-shop">
-                        <img src="images/bike-2.png" class="card-img-top mx-auto mt-3" style="width: 90%;" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-color">Yamaha MT 15</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between">
-                                <a href="#" class="text-success fw-bold fs-3">$23,000</a>
-                                <button class="btn bg-main text-white" type="button" data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                                    Buy Now <i class="fas fa-shopping-cart"></i>
-                                </button>
-
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
-                                    aria-labelledby="offcanvasExampleLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title fw-bold text-color text-uppercase"
-                                            id="offcanvasExampleLabel">Buying Immidietly</h5>
-                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        <div class="my-1">
-                                            Some text as placeholder. In real life you can have the elements you have
-                                            chosen. Like, text, images, lists, etc.
-                                        </div>
-                                        <div>
-                                            <img src="images/bike-2.png" class="img-fluid">
-                                        </div>
-                                        <div class="d-flex flex-wrap p-1 my-3">
-                                            <input type="text" placeholder="Enter Coupon" style="width: 60%;"
-                                                class="form-control">
-                                            <button class="btn btn-warning text-white " style="width: 40%;">Apply
-                                                Coupon</button>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">Price </span>
-                                            <span>$23,000</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">Taxes </span>
-                                            <span>$2,000</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">SubTotal </span>
-                                            <span>$25,000</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">Total </span>
-                                            <span>$25,000</span>
-                                        </div>
-                                        <div>
-                                            <div class="btn bg-main text-black mx-auto" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal"><span class="fw-bold text-white">Order
-                                                    Now</span>
-
-                                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h5 class="modal-title text-start"
-                                                                    id="exampleModalLabel">Buying Procced
-                                                                    title</h5>
-                                                                <button type="button" class="btn-close"
-                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
-                                                            </div>
-                                                            <div class="modal-body text-start fw-bold text-second">
-                                                                Successfully Order Placed. Your will deliver by
-                                                                Multimission Maritime Helicopter
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Sigle Shop Box -->
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card p-3  border-0 shadow-lg single-shop">
-                        <img src="images/bike-3.png" class="card-img-top mx-auto mt-3" style="width: 90%;" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-color">Yamaha FZ-X</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between">
-                                <a href="#" class="text-success fw-bold fs-3">$23,000</a>
-                                <button class="btn bg-main text-white" type="button" data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                                    Buy Now <i class="fas fa-shopping-cart"></i>
-                                </button>
-
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
-                                    aria-labelledby="offcanvasExampleLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title fw-bold text-color text-uppercase"
-                                            id="offcanvasExampleLabel">Buying Immidietly</h5>
-                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        <div class="my-1">
-                                            Some text as placeholder. In real life you can have the elements you have
-                                            chosen. Like, text, images, lists, etc.
-                                        </div>
-                                        <div>
-                                            <img src="images/bike-3.png" class="img-fluid">
-                                        </div>
-                                        <div class="d-flex flex-wrap p-1 my-3">
-                                            <input type="text" placeholder="Enter Coupon" style="width: 60%;"
-                                                class="form-control">
-                                            <button class="btn btn-warning text-white " style="width: 40%;">Apply
-                                                Coupon</button>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">Price </span>
-                                            <span>$23,000</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">Taxes </span>
-                                            <span>$2,000</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">SubTotal </span>
-                                            <span>$25,000</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">Total </span>
-                                            <span>$25,000</span>
-                                        </div>
-                                        <div>
-                                            <div class="btn bg-main text-black mx-auto" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal"><span class="fw-bold text-white">Order
-                                                    Now</span>
-
-                                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h5 class="modal-title text-start"
-                                                                    id="exampleModalLabel">Buying Procced
-                                                                    title</h5>
-                                                                <button type="button" class="btn-close"
-                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
-                                                            </div>
-                                                            <div class="modal-body text-start fw-bold text-second">
-                                                                Successfully Order Placed. Your will deliver by
-                                                                Multimission Maritime Helicopter
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Sigle Shop Box -->
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card p-3  border-0 shadow-lg single-shop">
-                        <img src="images/harley-6.jpg" class="card-img-top mx-auto mt-3" style="width: 90%;" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-color">Honda Activa 6G</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between">
-                                <a href="#" class="text-success fw-bold fs-3">$23,000</a>
-                                <button class="btn bg-main text-white" type="button" data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                                    Buy Now <i class="fas fa-shopping-cart"></i>
-                                </button>
-
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
-                                    aria-labelledby="offcanvasExampleLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title fw-bold text-color text-uppercase"
-                                            id="offcanvasExampleLabel">Buying Immidietly</h5>
-                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        <div class="my-1">
-                                            Some text as placeholder. In real life you can have the elements you have
-                                            chosen. Like, text, images, lists, etc.
-                                        </div>
-                                        <div>
-                                            <img src="images/bike-4.jpg" class="img-fluid">
-                                        </div>
-                                        <div class="d-flex flex-wrap p-1 my-3">
-                                            <input type="text" placeholder="Enter Coupon" style="width: 60%;"
-                                                class="form-control">
-                                            <button class="btn btn-warning text-white " style="width: 40%;">Apply
-                                                Coupon</button>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">Price </span>
-                                            <span>$23,000</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">Taxes </span>
-                                            <span>$2,000</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">SubTotal </span>
-                                            <span>$25,000</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">Total </span>
-                                            <span>$25,000</span>
-                                        </div>
-                                        <div>
-                                            <div class="btn bg-main text-black mx-auto" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal"><span class="fw-bold text-white">Order
-                                                    Now</span>
-
-                                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h5 class="modal-title text-start"
-                                                                    id="exampleModalLabel">Buying Procced
-                                                                    title</h5>
-                                                                <button type="button" class="btn-close"
-                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
-                                                            </div>
-                                                            <div class="modal-body text-start fw-bold text-second">
-                                                                Successfully Order Placed. Your will deliver by
-                                                                Multimission Maritime Helicopter
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Sigle Shop Box -->
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card p-3  border-0 shadow-lg single-shop">
-                        <img src="images/harley-1.jpg" class="card-img-top mx-auto mt-3" style="width: 90%;" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-color">Harely Bullet 350</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between">
-                                <a href="#" class="text-success fw-bold fs-3">$23,000</a>
-                                <button class="btn bg-main text-white" type="button" data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                                    Buy Now <i class="fas fa-shopping-cart"></i>
-                                </button>
-
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
-                                    aria-labelledby="offcanvasExampleLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title fw-bold text-color text-uppercase"
-                                            id="offcanvasExampleLabel">Buying Immidietly</h5>
-                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        <div class="my-1">
-                                            Some text as placeholder. In real life you can have the elements you have
-                                            chosen. Like, text, images, lists, etc.
-                                        </div>
-                                        <div>
-                                            <img src="images/harley-1.jpg" class="img-fluid">
-                                        </div>
-                                        <div class="d-flex flex-wrap p-1 my-3">
-                                            <input type="text" placeholder="Enter Coupon" style="width: 60%;"
-                                                class="form-control">
-                                            <button class="btn btn-warning text-white " style="width: 40%;">Apply
-                                                Coupon</button>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">Price </span>
-                                            <span>$23,000</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">Taxes </span>
-                                            <span>$2,000</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">SubTotal </span>
-                                            <span>$25,000</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">Total </span>
-                                            <span>$25,000</span>
-                                        </div>
-                                        <div>
-                                            <div class="btn bg-main text-black mx-auto" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal"><span class="fw-bold text-white">Order
-                                                    Now</span>
-
-                                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h5 class="modal-title text-start"
-                                                                    id="exampleModalLabel">Buying Procced
-                                                                    title</h5>
-                                                                <button type="button" class="btn-close"
-                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
-                                                            </div>
-                                                            <div class="modal-body text-start fw-bold text-second">
-                                                                Successfully Order Placed. Your will deliver by
-                                                                Multimission Maritime Helicopter
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Sigle Shop Box -->
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card p-3  border-0 shadow-lg single-shop">
-                        <img src="images/harley-4.jpg" class="card-img-top mx-auto mt-3" style="width: 90%;" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-color">Harley Davidson</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between">
-                                <a href="#" class="text-success fw-bold fs-3">$23,000</a>
-                                <button class="btn bg-main text-white" type="button" data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                                    Buy Now <i class="fas fa-shopping-cart"></i>
-                                </button>
-
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
-                                    aria-labelledby="offcanvasExampleLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title fw-bold text-color text-uppercase"
-                                            id="offcanvasExampleLabel">Buying Immidietly</h5>
-                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        <div class="my-1">
-                                            Some text as placeholder. In real life you can have the elements you have
-                                            chosen. Like, text, images, lists, etc.
-                                        </div>
-                                        <div>
-                                            <img src="images/bike-1.png" class="img-fluid">
-                                        </div>
-                                        <div class="d-flex flex-wrap p-1 my-3">
-                                            <input type="text" placeholder="Enter Coupon" style="width: 60%;"
-                                                class="form-control">
-                                            <button class="btn btn-warning text-white " style="width: 40%;">Apply
-                                                Coupon</button>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">Price </span>
-                                            <span>$23,000</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">Taxes </span>
-                                            <span>$2,000</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">SubTotal </span>
-                                            <span>$25,000</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between bg-gray p-1 my-3">
-                                            <span class=" fw-bold">Total </span>
-                                            <span>$25,000</span>
-                                        </div>
-                                        <div>
-                                            <div class="btn bg-main text-black mx-auto" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal"><span class="fw-bold text-white">Order
-                                                    Now</span>
-
-                                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h5 class="modal-title text-start"
-                                                                    id="exampleModalLabel">Buying Procced
-                                                                    title</h5>
-                                                                <button type="button" class="btn-close"
-                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
-                                                            </div>
-                                                            <div class="modal-body text-start fw-bold text-second">
-                                                                Successfully Order Placed. Your will deliver by
-                                                                Multimission Maritime Helicopter
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!-- Single Shop Box -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="card p-3 border-0 shadow-lg single-shop">
+        <img src="images/pngwing.com.png" class="card-img-top mx-auto mt-3" style="width: 90%;" alt="...">
+        <div class="card-body1">
+            <h5 class="card-title fw-bold text-color">Royal Enfield Himalayan</h5>
+            <p class="card-text">The Royal Enfield Himalayan is built for adventure, combining rugged durability with versatile performance.</p>
+            <div class="d-flex justify-content-between">
+                <a href="#" class="text-success fw-bold fs-3">$20,000</a>
+                <button class="btn btn-primary buy-now-btn">Buy Now <i class="fas fa-shopping-cart"></i></button>
             </div>
         </div>
-    </section>
+    </div>
+</div>
+<div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="card p-3 border-0 shadow-lg single-shop">
+        <img src="images/PngItem_2478250.png" class="card-img-top mx-auto mt-3" style="width: 90%;" alt="...">
+        <div class="card-body1">
+            <h5 class="card-title fw-bold text-color">Royal Enfield Classic 350</h5>
+            <p class="card-text">The Royal Enfield Classic 350 is a timeless icon on two wheels, known for its retro design and robust performance.</p>
+            <div class="d-flex justify-content-between">
+                <a href="#" class="text-success fw-bold fs-3">$18,000</a>
+                <button class="btn btn-primary buy-now-btn">Buy Now <i class="fas fa-shopping-cart"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="card p-3 border-0 shadow-lg single-shop">
+        <img src="images/interceptor.png" class="card-img-top mx-auto mt-3" style="width: 90%;" alt="...">
+        <div class="card-body1">
+            <h5 class="card-title fw-bold text-color">Royal Enfield Interceptor 650</h5>
+            <p class="card-text">The Royal Enfield Interceptor 650 is a modern classic motorcycle with a powerful twin-cylinder engine.</p>
+            <div class="d-flex justify-content-between">
+                <a href="#" class="text-success fw-bold fs-3">$25,000</a>
+                <button class="btn btn-primary buy-now-btn">Buy Now <i class="fas fa-shopping-cart"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="card p-3 border-0 shadow-lg single-shop">
+        <img src="images/continental.png" class="card-img-top mx-auto mt-3" style="width: 90%;" alt="...">
+        <div class="card-body1">
+            <h5 class="card-title fw-bold text-color">Royal Enfield Continental GT 650</h5>
+            <p class="card-text">The Royal Enfield Continental GT 650 is a cafe racer designed for speed and style enthusiasts.</p>
+            <div class="d-flex justify-content-between">
+                <a href="#" class="text-success fw-bold fs-3">$24,000</a>
+                <button class="btn btn-primary buy-now-btn">Buy Now <i class="fas fa-shopping-cart"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="card p-3 border-0 shadow-lg single-shop">
+        <img src="images/bullet350.png" class="card-img-top mx-auto mt-3" style="width: 90%;" alt="...">
+        <div class="card-body1">
+            <h5 class="card-title fw-bold text-color">Royal Enfield Bullet 350</h5>
+            <p class="card-text">The Royal Enfield Bullet 350 is a classic cruiser known for its iconic design and smooth ride.</p>
+            <div class="d-flex justify-content-between">
+                <a href="#" class="text-success fw-bold fs-3">$16,000</a>
+                <button class="btn btn-primary buy-now-btn">Buy Now <i class="fas fa-shopping-cart"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Single Shop Box -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="card p-3 border-0 shadow-lg single-shop">
+        <img src="images/thunderbird.png" class="card-img-top mx-auto mt-3" style="width: 90%;" alt="...">
+        <div class="card-body1">
+            <h5 class="card-title fw-bold text-color">Royal Enfield Thunderbird</h5>
+            <p class="card-text">The Royal Enfield Thunderbird is a cruiser bike known for its comfortable ride and distinctive styling.</p>
+            <div class="d-flex justify-content-between">
+                <a href="#" class="text-success fw-bold fs-3">$21,000</a>
+                <button class="btn btn-primary buy-now-btn">Buy Now <i class="fas fa-shopping-cart"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- Floating Window -->
+<div class="floating-window">
+    <div class="floating-content">
+        <button type="button" class="btn-close" aria-label="Close"><i class="fas fa-times"></i></button> <!-- Close button with cross icon -->
+        <h5 class="fw-bold mb-3">Price Breakdown</h5>
+        <div class="price-details">
+            <div class="d-flex justify-content-between">
+                <span>Ex-Showroom Price:</span>
+                <span>$20,000</span>
+            </div>
+            <div class="d-flex justify-content-between">
+                <span>RTO Price:</span>
+                <span>$2,000</span>
+            </div>
+            <div class="d-flex justify-content-between">
+                <span>Insurance Price:</span>
+                <span>$1,000</span>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between">
+                <span>Total Price:</span>
+                <span class="fw-bold">$23,000</span>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap p-1 my-3">
+            <input type="text" placeholder="Enter Coupon" class="form-control me-2" style="flex: 2;">
+            <button class="btn btn-warning text-white" style="flex: 1;">Apply Coupon</button>
+        </div>
+        <button class="btn btn-primary w-100 btn-order-now" data-bs-toggle="modal" data-bs-target="#orderModal">Buy Now</button>
+    </div>
+</div>
+
+<!-- Order Confirmation Modal -->
+<div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="orderModalLabel">Order Placed</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Success! Your order is confirmed and will be dispatched shortly. Get ready to hit the road.            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
     <!-- Happy Clients 
     -------------------------------- -->
@@ -752,35 +321,29 @@
                     <!-- Single Card -->
                     <div class="col text-center">
                         <div class="card h-100 py-3 single-card">
-                            <img src="images/user-1.png" class="card-img-top img-fluid p-3 mx-auto" style="width: 50%;"
+                            <img src="images/user-1.jpg" class="card-img-top img-fluid p-3 mx-auto" style="width: 50%;"
                                 alt="...">
                             <div class="card-body">
-                                <p class="card-text text-center">Slate helps you see how
-                                    many more days you need
-                                    to work to reach your financial
-                                    goal for the month and year.</p>
+                                <p class="card-text text-center">I couldn't be happier with my purchase from Royal Enfield. The Classic 350 exceeded my expectations in every way!</p>
                             </div>
                             <div class="text-center">
                                 <i class="fas fa-star text-warning"></i>
                                 <i class="fas fa-star text-warning"></i>
                                 <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
                             </div>
-                            <h5 class="card-title fw-bold">Mark Miles</h5>
-                            <span class="fw-bold">Banker</span>
+                            <h5 class="card-title fw-bold">Jhon Doe</h5>
+                            <span class="fw-bold">Rider</span>
                         </div>
                     </div>
                     <!-- Single Card -->
                     <div class="col text-center">
                         <div class="card h-100 py-3 single-card">
-                            <img src="images/user-2.png" class="card-img-top img-fluid p-3 mx-auto" style="width: 50%;"
+                            <img src="images/user-2.jpg" class="card-img-top img-fluid p-3 mx-auto" style="width: 50%;"
                                 alt="...">
                             <div class="card-body">
-                                <p class="card-text text-center">Slate helps you see how
-                                    many more days you need
-                                    to work to reach your financial
-                                    goal for the month and year.</p>
+                                <p class="card-text text-center">From start to finish, buying my Royal Enfield was a pleasure. The team was knowledgeable, and the bike is a dream to ride.</p>
                             </div>
                             <div class="text-center">
                                 <i class="fas fa-star text-warning"></i>
@@ -789,14 +352,14 @@
                                 <i class="fas fa-star text-warning"></i>
                                 <i class="fas fa-star text-secondary"></i>
                             </div>
-                            <h5 class="card-title fw-bold">Zuck Miles</h5>
+                            <h5 class="card-title fw-bold">Emily Brown</h5>
                             <span class="fw-bold">Banker</span>
                         </div>
                     </div>
                     <!-- Single Card -->
                     <div class="col text-center">
                         <div class="card h-100 py-3 single-card">
-                            <img src="images/user-3.png" class="card-img-top img-fluid p-3 mx-auto rounded-circle"
+                            <img src="images/user-3.jpg" class="card-img-top img-fluid p-3 mx-auto rounded-circle"
                                 style="width: 50%;" alt="...">
                             <div class="card-body">
                                 <p class="card-text text-center">Slate helps you see how
@@ -820,137 +383,155 @@
         </div>
     </section>
 
-    <!-- Frequently Client Says -->
-    <section class="frequent-box">
-        <div class="container">
-            <div>
-                <h1 class="text-center fw-bold  py-5 small-border position-relative">Frequently Asked <span
-                        style="color: #E76F51;">Questions</span>
-                </h1>
+<!-- Frequently Client Says -->
+<section class="frequent-box">
+    <div class="container">
+        <div>
+            <h1 class="text-center fw-bold py-5 small-border position-relative" style="color: black;">Frequently Asked <span
+                    class="text-color">Questions</span>
+            </h1>
+        </div>
+        <div class="row g-3">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <img src="images/faq.png" alt="" class="img-fluid">
             </div>
-            <div class="row g-3">
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <img src="images/faq.png" alt="" class="img-fluid">
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <div class="accordion" id="accordionPanelsStayOpenExample">
-                        <div class="accordion-item my-3">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                                    aria-controls="panelsStayOpen-collapseOne">
-                                    What are the most important things I should know about riding a bike?
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                                aria-labelledby="panelsStayOpen-headingOne">
-                                <div class="accordion-body">
-                                    Safety First! Always obey the rules of the road. Obey all traffic signals, signs,
-                                    and laws. Get in the mindset of “driving” your bike—not just “riding” your bike.
-                                    This will help you be a more focused and legally compliant bike rider.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item my-3">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                                    aria-controls="panelsStayOpen-collapseTwo">
-                                    How can I tell if my helmet is old and I need a new one?
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                                aria-labelledby="panelsStayOpen-headingTwo">
-                                <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item my-3">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                                    aria-controls="panelsStayOpen-collapseThree">
-                                    My bike has been in storage is it safe to ride?
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                                aria-labelledby="panelsStayOpen-headingThree">
-                                <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item my-3">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                                    aria-controls="panelsStayOpen-collapseThree">
-                                    What rules should I follow when riding my bike?
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                                aria-labelledby="panelsStayOpen-headingThree">
-                                <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="accordion" id="accordionFAQ">
+                    <!-- Question 1 -->
+                    <div class="accordion-item my-3">
+                        <h2 class="accordion-header" id="faq-heading1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq-collapse1" aria-expanded="true" aria-controls="faq-collapse1">
+                                How do I choose the right size bike?
+                            </button>
+                        </h2>
+                        <div id="faq-collapse1" class="accordion-collapse collapse show" aria-labelledby="faq-heading1"
+                            data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                                When choosing a bike size, consider your height and inseam measurement. Check the
+                                manufacturer's sizing charts and try out different models if possible. A bike that fits
+                                well ensures comfort and control while riding.
                             </div>
                         </div>
                     </div>
+
+                    <!-- Question 2 -->
+                    <div class="accordion-item my-3">
+                        <h2 class="accordion-header" id="faq-heading2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq-collapse2" aria-expanded="false" aria-controls="faq-collapse2">
+                                What maintenance does my bike need?
+                            </button>
+                        </h2>
+                        <div id="faq-collapse2" class="accordion-collapse collapse" aria-labelledby="faq-heading2"
+                            data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                                Regular maintenance includes checking tire pressure, lubricating the chain, inspecting
+                                brakes, and ensuring all bolts are tightened. A yearly tune-up by a professional can
+                                prolong the life of your bike and ensure safe operation.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="accordion-item my-3">
+                        <h2 class="accordion-header" id="faq-heading3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq-collapse3" aria-expanded="false" aria-controls="faq-collapse3">
+                                Can I ride a bike in rainy weather?
+                            </button>
+                        </h2>
+                        <div id="faq-collapse3" class="accordion-collapse collapse" aria-labelledby="faq-heading3"
+                            data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                                Yes, you can ride in rainy conditions with proper precautions. Use fenders to prevent
+                                water splashes, wear bright clothing for visibility, and use lights. Reduce speed and
+                                increase braking distance to maintain control on wet surfaces.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="accordion-item my-3">
+                        <h2 class="accordion-header" id="faq-heading4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq-collapse4" aria-expanded="false" aria-controls="faq-collapse4">
+                                How often should I replace my bike helmet?
+                            </button>
+                        </h2>
+                        <div id="faq-collapse4" class="accordion-collapse collapse" aria-labelledby="faq-heading4"
+                            data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                                Replace your bike helmet every 5-7 years, even if it hasn't been involved in a crash.
+                                Helmets deteriorate over time due to sweat, UV exposure, and general wear. Inspect it
+                                regularly for cracks, dents, or other signs of damage.
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </section>
-
+    </div>
+</section>
     <a href="#header" class="back-top"><i class="fas fa-chevron-up"></i></a>
-    <!-- Footer Section
-    ---------------------------- -->
-    <footer class="py-5" style="background-color: #0B0D17;">
-        <div class="container ">
-            <div class="d-lg-flex justify-content-between align-items-center text-white">
-                <div class="">
-                    <div class="d-flex">
-                        <a class="me-3" href="#">Downloads</a>
-                        <a class="me-3" href="#">License</a>
-                    </div>
-                    <div class="d-flex">
-                        <a class="me-3 my-3" href="#">About</a>
-                        <a class="me-3 my-3" href="#">Pricing</a>
-                        <a class="me-3 my-3" href="#">Careers</a>
-                        <a class="me-3 my-3" href="#">Help</a>
-                    </div>
-                    <div class="my-3">
-                        <span class="tt-uppercase">&copy2020 all rights reserved by al siam</span>
-                    </div>
+    <!-- Footer Section -->
+<footer class="py-5" style="background-color: #0B0D17;">
+    <div class="container">
+        <div class="d-lg-flex justify-content-between align-items-center text-white">
+            <div>
+                <div class="d-flex">
+                    <a class="me-3 my-3" href="#header">About</a>
+                    <a class="me-3 my-3" href="#Shopping">Pricing</a>
+                    <a class="me-3 my-3" id="contactUsLink" href="#">Contact Us</a>
                 </div>
-                <div class="">
-                    <h4>Get the App</h4>
-                    <img src="images/app-store.png" class="img-fluid d-block rounded my-3" style="width: 50%;" alt="">
-                    <img src="images/play-store.png" class="img-fluid d-block rounded my-3" style="width: 50%;" alt="">
+                <div class="my-3">
+                    <span class="tt-uppercase">&copy; 2024 all rights reserved by Abhishek Kumar</span>
                 </div>
             </div>
+            <div>
+                <h4>Get the App</h4>
+                <img src="images/app-store.png" class="img-fluid d-block rounded my-3" style="width: 50%;" alt="">
+                <img src="images/play-store.png" class="img-fluid d-block rounded my-3" style="width: 50%;" alt="">
+            </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <!-- Bootstrap Bundle JS -->
+<!-- Floating Contact Us Form (Hidden Initially) -->
+<div class="floating-window contact-form" id="contact-us">
+    <div class="floating-content">
+        <button type="button" class="btn-close" aria-label="Close"><i class="fas fa-times"></i></button>
+        <h5 class="fw-bold mb-3">Contact Us</h5>
+        <form id="contactForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+    </div>
+</div>
+<!-- Floating Success Message Window -->
+<div class="floating-window success-message" style="display: none;">
+    <div class="floating-content">
+        <button type="button" class="btn-close" aria-label="Close"><i class="fas fa-times"></i></button>
+        <h5 class="fw-bold mb-3">Success!</h5>
+        <p>Your message has been successfully sent. We will get back to you soon.</p>
+    </div>
+</div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
